@@ -1,5 +1,5 @@
-This repository contains the supplementary material for the paper "EMORF-II: ADAPTIVE EM-BASEDOUTLIER-ROBUSTFILTERINGWITHCORRELATED
- MEASUREMENTNOISE" submitted to 2025 IEEE INTERNATIONAL WORKSHOP ON MACHINE LEARNING AND SIGNAL PROCESSING
+This repository contains the supplementary material for the paper "EMORF-II: ADAPTIVE EM-BASED OUTLIER-ROBUST FILTERING WITH CORRELATED
+ MEASUREMENT NOISE" submitted to 2025 IEEE INTERNATIONAL WORKSHOP ON MACHINE LEARNING AND SIGNAL PROCESSING
  We also include the code for our simulations and our proposed method "EMORF-II".
 
  The proposed method is contained in the function EMORF-II.m
