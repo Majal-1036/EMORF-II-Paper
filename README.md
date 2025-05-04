@@ -16,23 +16,27 @@ In addition to the supplementary derivations, you’ll find:
 
 ## Repository Structure
 
+```text
 ├── EMORF-II.m
-├── robust_vbkf_ind_self_modular_ind_sens_nsensors_xpp.m # Independent VBKF
-├── robust_vbkf_self_modular_nsensors_10_xpp.m # General VBKF (N = 10)
-├── robust_vbkf_self_modular_nsensors_1_xpp.m # General VBKF (N = 1)
-├── ukf_ideal_self_modular_nsensors_xpp.m # Ideal UKF
-├── robust_EMORF_self_modular_ind_sens_nsensors_xpp.m # EMORF-I
+├── robust_vbkf_ind_self_modular_ind_sens_nsensors_xpp.m    # Independent VBKF
+├── robust_vbkf_self_modular_nsensors_10_xpp.m              # General VBKF (N = 10)
+├── robust_vbkf_self_modular_nsensors_1_xpp.m               # General VBKF (N = 1)
+├── ukf_ideal_self_modular_nsensors_xpp.m                   # Ideal UKF
+├── robust_EMORF_self_modular_ind_sens_nsensors_xpp.m       # EMORF-I
 │
-├── EMORF_II_Performance_Comparisons.m # Fig. 2
-├── EMORF_II_Increasing_Sensors_Comparison.m # Fig. 3
-├── EMORF_II_Time_Comparison.m # Fig. 4
+├── EMORF_II_Performance_Comparisons.m                      # Fig. 2
+├── EMORF_II_Increasing_Sensors_Comparison.m                 # Fig. 3
+├── EMORF_II_Time_Comparison.m                               # Fig. 4
 │
 ├── images/
-│ ├── Performance_Comparison.jpg
-│ ├── Performance_Comparison_Increasing_m.jpg
-│ └── Computation_Time_Comparison.jpg
+│   ├── Performance_Comparison.jpg
+│   ├── Performance_Comparison_Increasing_m.jpg
+│   └── Computation_Time_Comparison.jpg
 │
 └── README.md
+```
+
+
 
 
 
@@ -41,7 +45,7 @@ In addition to the supplementary derivations, you’ll find:
 ## Prerequisites
 
 - MATLAB R2020a or later  
-- [daboxplot](https://www.mathworks.com/matlabcentral/fileexchange/26508-daboxplot) — place this folder anywhere on your MATLAB path.
+- [daboxplot]([https://www.mathworks.com/matlabcentral/fileexchange/26508-daboxplot](https://www.mathworks.com/matlabcentral/fileexchange/74851-daboxplot)) — place this folder anywhere on your MATLAB path.
 
 ---
 
@@ -51,7 +55,7 @@ In addition to the supplementary derivations, you’ll find:
    ```bash
    git clone https://github.com/your_username/EMORF-II.git
    cd EMORF-II
-2. addpath(genpath('path/to/daboxplot'))
+2. addpath('path/to/daboxplot')
 3. Run EMORF_II_Performance_Comparisons.m
 ![Performance Comparison](images/Performance_Comparison.jpg)
 4. Run EMORF_II_Increasing_Sensors_Comparison.m
@@ -60,26 +64,23 @@ In addition to the supplementary derivations, you’ll find:
 ![Computation Time Comparison](images/Computation_Time_Comparison.jpg)
 
 
-Method Implementations
-EMORF-II.m
-Our proposed adaptive EM-based outlier-robust filter.
+## Method Implementations
 
-Comparative Filters
+- **EMORF-II.m**  
+  Our proposed adaptive EM-based outlier-robust filter.
 
-robust_vbkf_ind_self_modular_ind_sens_nsensors_xpp.m
-Independent VB Kalman filter
+- **Comparative Filters**  
+  - `robust_vbkf_ind_self_modular_ind_sens_nsensors_xpp.m`  
+    Independent VB Kalman filter  
+  - `robust_vbkf_self_modular_nsensors_10_xpp.m`  
+    General VB Kalman filter (N = 10)  
+  - `robust_vbkf_self_modular_nsensors_1_xpp.m`  
+    General VB Kalman filter (N = 1)  
+  - `ukf_ideal_self_modular_nsensors_xpp.m`  
+    Ideal Unscented Kalman filter  
+  - `robust_EMORF_self_modular_ind_sens_nsensors_xpp.m`  
+    The original EMORF-I algorithm  
 
-robust_vbkf_self_modular_nsensors_10_xpp.m
-General VB Kalman filter (N = 10)
-
-robust_vbkf_self_modular_nsensors_1_xpp.m
-General VB Kalman filter (N = 1)
-
-ukf_ideal_self_modular_nsensors_xpp.m
-Ideal Unscented Kalman filter
-
-robust_EMORF_self_modular_ind_sens_nsensors_xpp.m
-The original EMORF-I algorithm
 
 
 If you use this code in your research, please cite:
