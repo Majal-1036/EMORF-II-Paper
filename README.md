@@ -16,12 +16,19 @@ You will need to add daboxplot to your folders and subfolders to run the followi
 
 EMORF_II_Performance_Comparisons.m runs the simulation for comparing the accuracy of all the considered algorithms with increasing outlier occurrence probabilities
  denoted by λ and should produce the following Fig. 2 from the paper
+![Performance Comparison](images/Performance_Comparison.jpg)
+
+
 
 EMORF_II_Increasing_Sensors_Comparison.m we evaluate the error performance of each algorithm with increasing
   m (number of sensors) and should produce the folliwing Fig. 3 from the paper
 
+![Performance Comparison (increasing $m$)](images/Performance_Comparison_Increasing_m.jpg)
+
 EMORF_II_Time_Comparison.m compares  the computational efficiency of each algorithm by measuring their running times
  with increasing m resulting in the Fig. 4 form the paper
+
+ ![Computation Time Comparison](images/Computation_Time_Comparison.jpg)
  
 
   
