@@ -1,40 +1,89 @@
-This repository contains the supplementary material for the paper "EMORF-II: ADAPTIVE EM-BASED OUTLIER-ROBUST FILTERING WITH CORRELATED
- MEASUREMENT NOISE" submitted to 2025 IEEE INTERNATIONAL WORKSHOP ON MACHINE LEARNING AND SIGNAL PROCESSING
- We also include the code for our simulations and our proposed method "EMORF-II".
+# EMORF-II: Adaptive EM-Based Outlier-Robust Filtering
 
- The proposed method is contained in the function EMORF-II.m
- The comparitive methods are also included as following
+This repository contains all supplementary materials for the paper:
 
- robust_vbkf_ind_self_modular_ind_sens_nsensors_xpp.m --> Ind. VBKF
- robust_vbkf_self_modular_nsensors_10_xpp.m --> Gen. VBKF (N = 10)
- robust_vbkf_self_modular_nsensors_1_xpp.m --> Gen. VBKF (N = 1)
- ukf_ideal_self_modular_nsensors_xpp.m --> Ideal UKF
- robust_EMORF_self_modular_ind_sens_nsensors_xpp.m --> EMORF
+> **EMORF-II: Adaptive EM-Based Outlier-Robust Filtering with Correlated Measurement Noise**  
+> *2025 IEEE International Workshop on Machine Learning and Signal Processing*
 
-You will need to add daboxplot to your folders and subfolders to run the following simulations
+In addition to the supplementary derivations, you’ll find:
+
+- MATLAB implementations of our proposed algorithm (`EMORF-II.m`)  
+- Reference implementations of competing filters  
+- Simulation scripts to reproduce the figures in the paper  
+- Example output images in the `images/` directory
+
+---
+
+## Repository Structure
+
+├── EMORF-II.m
+├── robust_vbkf_ind_self_modular_ind_sens_nsensors_xpp.m # Independent VBKF
+├── robust_vbkf_self_modular_nsensors_10_xpp.m # General VBKF (N = 10)
+├── robust_vbkf_self_modular_nsensors_1_xpp.m # General VBKF (N = 1)
+├── ukf_ideal_self_modular_nsensors_xpp.m # Ideal UKF
+├── robust_EMORF_self_modular_ind_sens_nsensors_xpp.m # EMORF-I
+│
+├── EMORF_II_Performance_Comparisons.m # Fig. 2
+├── EMORF_II_Increasing_Sensors_Comparison.m # Fig. 3
+├── EMORF_II_Time_Comparison.m # Fig. 4
+│
+├── images/
+│ ├── Performance_Comparison.jpg
+│ ├── Performance_Comparison_Increasing_m.jpg
+│ └── Computation_Time_Comparison.jpg
+│
+└── README.md
 
 
-EMORF_II_Performance_Comparisons.m runs the simulation for comparing the accuracy of all the considered algorithms with increasing outlier occurrence probabilities
- denoted by λ and should produce the following Fig. 2 from the paper
+
+---
+
+## Prerequisites
+
+- MATLAB R2020a or later  
+- [daboxplot](https://www.mathworks.com/matlabcentral/fileexchange/26508-daboxplot) — place this folder anywhere on your MATLAB path.
+
+---
+
+## Usage
+
+1. **Clone this repository**  
+   ```bash
+   git clone https://github.com/your_username/EMORF-II.git
+   cd EMORF-II
+2. addpath(genpath('path/to/daboxplot'))
+3. Run EMORF_II_Performance_Comparisons.m
 ![Performance Comparison](images/Performance_Comparison.jpg)
-
-
-
-EMORF_II_Increasing_Sensors_Comparison.m we evaluate the error performance of each algorithm with increasing
-  m (number of sensors) and should produce the folliwing Fig. 3 from the paper
-
+4. Run EMORF_II_Increasing_Sensors_Comparison.m
 ![Performance Comparison (increasing $m$)](images/Performance_Comparison_Increasing_m.jpg)
-
-EMORF_II_Time_Comparison.m compares  the computational efficiency of each algorithm by measuring their running times
- with increasing m resulting in the Fig. 4 form the paper
-
- ![Computation Time Comparison](images/Computation_Time_Comparison.jpg)
- 
-
-  
- 
+5. Run EMORF_II_Time_Comparison.m
+![Computation Time Comparison](images/Computation_Time_Comparison.jpg)
 
 
- 
- 
- 
+Method Implementations
+EMORF-II.m
+Our proposed adaptive EM-based outlier-robust filter.
+
+Comparative Filters
+
+robust_vbkf_ind_self_modular_ind_sens_nsensors_xpp.m
+Independent VB Kalman filter
+
+robust_vbkf_self_modular_nsensors_10_xpp.m
+General VB Kalman filter (N = 10)
+
+robust_vbkf_self_modular_nsensors_1_xpp.m
+General VB Kalman filter (N = 1)
+
+ukf_ideal_self_modular_nsensors_xpp.m
+Ideal Unscented Kalman filter
+
+robust_EMORF_self_modular_ind_sens_nsensors_xpp.m
+The original EMORF-I algorithm
+
+
+If you use this code in your research, please cite:
+TBD
+
+
+
