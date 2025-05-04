@@ -17,16 +17,16 @@ In addition to the supplementary derivations, you’ll find:
 ## Repository Structure
 
 ```text
-├── EMORF-II.m
-├── robust_vbkf_ind_self_modular_ind_sens_nsensors_xpp.m    # Independent VBKF
-├── robust_vbkf_self_modular_nsensors_10_xpp.m              # General VBKF (N = 10)
-├── robust_vbkf_self_modular_nsensors_1_xpp.m               # General VBKF (N = 1)
-├── ukf_ideal_self_modular_nsensors_xpp.m                   # Ideal UKF
-├── robust_EMORF_self_modular_ind_sens_nsensors_xpp.m       # EMORF-I
-│
-├── EMORF_II_Performance_Comparisons.m                      # Fig. 2
-├── EMORF_II_Increasing_Sensors_Comparison.m                 # Fig. 3
-├── EMORF_II_Time_Comparison.m                               # Fig. 4
+├── Paper_Code/
+│   ├── EMORF-II.m
+│   ├── robust_vbkf_ind_self_modular_ind_sens_nsensors_xpp.m    # Independent VBKF
+│   ├── robust_vbkf_self_modular_nsensors_10_xpp.m              # General VBKF (N = 10)
+│   ├── robust_vbkf_self_modular_nsensors_1_xpp.m               # General VBKF (N = 1)
+│   ├── ukf_ideal_self_modular_nsensors_xpp.m                   # Ideal UKF
+│   ├── robust_EMORF_self_modular_ind_sens_nsensors_xpp.m       # EMORF-I
+│   ├── EMORF_II_Performance_Comparisons.m                      # Fig. 2
+│   ├── EMORF_II_Increasing_Sensors_Comparison.m                 # Fig. 3
+│   └── EMORF_II_Time_Comparison.m                               # Fig. 4
 │
 ├── images/
 │   ├── Performance_Comparison.jpg
