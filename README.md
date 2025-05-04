@@ -68,7 +68,7 @@ In addition to the supplementary derivations, you’ll find:
 
 ## Method Implementations
 
-- **EMORF-II.m**  
+- `EMORF-II.m` 
   Our proposed adaptive EM-based outlier-robust filter.
 
 - **Comparative Filters**  
