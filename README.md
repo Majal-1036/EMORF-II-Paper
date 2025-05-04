@@ -45,7 +45,7 @@ In addition to the supplementary derivations, you’ll find:
 ## Prerequisites
 
 - MATLAB R2020a or later  
-- [daboxplot]([https://www.mathworks.com/matlabcentral/fileexchange/26508-daboxplot](https://www.mathworks.com/matlabcentral/fileexchange/74851-daboxplot)) — place this folder anywhere on your MATLAB path.
+- [daboxplot](https://www.mathworks.com/matlabcentral/fileexchange/74851-daboxplot) — place this folder anywhere on your MATLAB path.
 
 ---
 
@@ -53,7 +53,7 @@ In addition to the supplementary derivations, you’ll find:
 
 1. **Clone this repository**  
    ```bash
-   git clone https://github.com/your_username/EMORF-II.git
+   git clone https://github.com/Majal-1036/EMORF-II-Paper.git
    cd EMORF-II
 2. addpath('path/to/daboxplot')
 3. Run EMORF_II_Performance_Comparisons.m
